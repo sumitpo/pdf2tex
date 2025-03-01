@@ -1,0 +1,58 @@
+\documentclass[12pt]{ctexbook}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    filecolor=red,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\usepackage{tcolorbox}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,backgrounds, arrows,shadows,positioning}
+
+% \setlength\paperheight{26cm}
+% \setlength\paperwidth{18.4cm}
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{left=2cm, right=2cm, top=3cm, bottom=2cm}
+
+%---------------------------------------------------%
+\usepackage{titlesec}
+\usepackage{multicol}
+\titleformat{\chapter}
+   {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\section}
+   {\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\newcommand*{\setupTOC}{%
+\titleformat{\chapter}{}{}{0pt}{} 
+
+\titlespacing*{\chapter}{0pt}
+{*7} %  % vertical space before the title <<<<<<<<<<
+{*-15}  %  idem after title (in ex units + glue) <<<<<<<<<<<
+}
+
+\begin{document}
+\begin{multicols}{2}
+	{\setupTOC  \tableofcontents}
+\end{multicols}
+
+\include{chapters/1}
+\include{chapters/2}
+\include{chapters/3}
+\include{chapters/4}
+\include{chapters/5}
+\include{chapters/6}
+\include{chapters/7}
+\include{chapters/8}
+\include{chapters/9}
+\include{chapters/10}
+\include{chapters/11}
+\include{chapters/12}
+\include{chapters/13}
+\include{chapters/14}
+\include{chapters/15}
+\end{document}

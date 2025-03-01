@@ -1,0 +1,2 @@
+PyMuPDF==1.25.3
+ocrmac==1.0.0
